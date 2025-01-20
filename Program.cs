@@ -30,7 +30,7 @@ else Console.WriteLine($"f6: {(f6t > f6u ? "torna" : "uszas")} sportagban szerez
 using StreamWriter sw = new($"{PATH}\\helsinki2.txt");
 foreach (var e in eredmenyek)
     sw.WriteLine($"{e.Helyezes} {e.SportolokSzama} {e.OlimpiaiPont} " +
-        $"{(e.Sportag == "kajakkenu" ? "kajak-kenu" : e.Sportag)} {e.Versenyszam}");
+        $"{(e.Sportag == "kajakkenu" ? "kajak–kenu" : e.Sportag)} {e.Versenyszam}");
 
 var f8 = eredmenyek.MaxBy(e => e.SportolokSzama);
 Console.WriteLine($"f8:\n{f8}");
